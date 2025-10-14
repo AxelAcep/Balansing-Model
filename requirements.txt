@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+pandas
+ultralytics
+opencv-python-headless
+pillow
+numpy
