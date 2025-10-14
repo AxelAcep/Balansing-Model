@@ -251,11 +251,11 @@ async def predict_yolo(file: UploadFile = File(...)):
                 })
 
             # Simpan gambar dengan bounding box
-            im_array = r.plot()  # numpy array dengan bbox
-            im_rgb = cv2.cvtColor(im_array, cv2.COLOR_BGR2RGB)  # convert ke RGB
-            output_path = f"output_{uuid.uuid4().hex}.jpg"
-            Image.fromarray(im_rgb).save(output_path)
-            output_files.append(output_path)
+            # im_array = r.plot()  # numpy array dengan bbox
+            # im_rgb = cv2.cvtColor(im_array, cv2.COLOR_BGR2RGB)  # convert ke RGB
+            # output_path = f"output_{uuid.uuid4().hex}.jpg"
+            # Image.fromarray(im_rgb).save(output_path)
+            # output_files.append(output_path)
 
         # Hapus file input
         os.remove(temp_filename)
